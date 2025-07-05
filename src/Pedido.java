@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Pedido {
 
-    private Endereco enderecoEntrega;
+    private String enderecoEntrega;
     private String codigoPedido;
     private int status;
     private Map<String, ItemPedido> itensPedido;
@@ -26,10 +26,13 @@ public class Pedido {
         this.codigoPedido = codigoPedido;
     }
 
-    public Endereco getenderecoEntrega() {
+    public String getEnderecoEntrega() {
         return enderecoEntrega;
     }
-
+    
+    public void set EnderecoEntrega(String enderecoEntrega){
+        this.enderecoEntrega = enderecoEntrega;
+    }
 
     public int getStatus() {
         return status;
