@@ -8,7 +8,7 @@ public class Pedido {
 
     private Endereco enderecoEntrega;
     private String codigoPedido;
-    private int status;
+    private int status;   //Status não é melhor como String não ?
     private Map<String, ItemPedido> itensPedido;
 
     public Pedido(Endereco enderecoEntrega, String codigoPedido) {
