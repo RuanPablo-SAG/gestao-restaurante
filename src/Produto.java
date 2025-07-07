@@ -9,7 +9,7 @@ public class Produto {
 
     private String codigoProduto;
     private String descricaoProduto;
-    private float Valor;
+    private float valor;
     private LocalDate validade;
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -36,11 +36,11 @@ public class Produto {
     }
 
     public float getValor() {
-        return Valor;
+        return valor;
     }
 
     public void setValor(float valor) {
-        Valor = valor;
+        this.valor = valor;
     }
 
     public LocalDate getValidade() {
@@ -53,7 +53,7 @@ public class Produto {
 
     public void preencherProduto(Scanner input){
         System.out.println("Digite o valor do produto: ");
-        this.Valor = input.nextFloat();
+        this.valor = input.nextFloat();
 
         input.nextLine(); //Limpar o buffer
 
