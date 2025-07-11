@@ -47,8 +47,8 @@ public abstract class Pedido {
         for (ItemPedido item : itensPedido.values()) {
             System.out.println("Produto: " + item.getCodigoProduto());
             System.out.println("Quantidade: " + item.getQuantidade());
-            System.out.printf("Preço Unitário: R$ %.2f\n", item.getPrecoProduto());
-            System.out.printf("Subtotal: R$ %.2f\n", item.calcularTotal());
+            System.out.printf("Preço Unitário: R$ %.2f\n" + item.getPrecoProduto());
+            System.out.printf("Subtotal: R$ %.2f\n" + item.calcularTotal());
             System.out.println("=========================");
         }
     }
