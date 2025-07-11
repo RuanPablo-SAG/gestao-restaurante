@@ -15,13 +15,13 @@ public class NotaFiscal {
     }
 
     public void emitirNotaFiscal(){
-        this.dataEmissao = LocalDateTime.now(); //pega a data e hora atual
+        dataEmissao = LocalDateTime.now(); //pega a data e hora atual
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
         System.out.println("====== Nota Fiscal Emitida ======");
         System.out.println("número: " +  numero);
-        System.out.printf("Valor Total: R$ %.2f%n", valorTotal);
-        System.out.println("Data de Emissao: R$ " + dataEmissao.format(formatter));
+        System.out.printf("Valor Total: R$ %.2f%n" + valorTotal); //Trocar , por +
+        System.out.println("Data de Emissao: " + dataEmissao.format(formatter)); //RS na Data!
     }
 
     public LocalDateTime getDataEmissao() {
